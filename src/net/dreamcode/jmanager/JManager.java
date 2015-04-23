@@ -37,7 +37,7 @@ public class JManager {
 			String[] content = result.split(" ");
 			
 			for (int i = 0; i < content.length; i++) {
-				if (content[i].equalsIgnoreCase("aktualisiert,")) {
+				if (content[i].equalsIgnoreCase("aktualisiert,") || content[i].equalsIgnoreCase("upgraded,")) {
 					String strCount = content[i - 1];
 					if (strCount.contains("\r\n")) {
 						strCount = strCount.split("\r\n")[1];
